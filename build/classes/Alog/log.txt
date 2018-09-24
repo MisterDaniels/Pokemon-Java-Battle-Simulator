@@ -1,7 +1,0 @@
-UPDATE
-
-1.0
-- Sistema de batalha, onde haja espera para ataque do inimigo;
-- Escolher pokémon, tenha diversas opções. Sistema de Pokébag;
-- Implementar mapa de ilhas para aparecimento de tipos de Pokémons distintos e típicos de cada localidade;
-- Sistema de mount;  
