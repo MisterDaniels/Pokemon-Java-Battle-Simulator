@@ -1,4 +1,4 @@
-
+﻿
 package view;
 
 import java.applet.Applet;
@@ -48,7 +48,7 @@ public class Batalha extends javax.swing.JFrame {
     }
     
     public void carregarPokemons(){
-        File arquivo = new File ("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\data\\pokemon.txt");
+        File arquivo = new File ("\\src\\data\\pokemon.txt");
         FileReader FR;
         BufferedReader BR;
         int cont = 0, cont1 = 0;
@@ -77,7 +77,7 @@ public class Batalha extends javax.swing.JFrame {
     }
     
     public int getQntPokemons(){
-        File arquivo = new File ("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\data\\pokemon.txt");
+        File arquivo = new File ("\\src\\data\\pokemon.txt");
         FileReader FR;
         BufferedReader BR;
         int quantidade = 0;
@@ -98,7 +98,7 @@ public class Batalha extends javax.swing.JFrame {
     }
     
     public void carregarSprites(){
-        File pasta = new File ("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\img\\sprites");
+        File pasta = new File ("\\src\\img\\sprites");
         String [] arquivos = pasta.list();
         sprites = new Icon [arquivos.length];
         
@@ -108,7 +108,7 @@ public class Batalha extends javax.swing.JFrame {
     }
     
     public void carregarCrys(){
-        File pasta = new File ("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\sound\\cry");
+        File pasta = new File ("\\src\\sound\\cry");
         String [] arquivos = pasta.list();
         crys = new AudioClip[arquivos.length];
         
@@ -118,7 +118,7 @@ public class Batalha extends javax.swing.JFrame {
     }
     
     public void carregarIcones(){
-        File pasta = new File ("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\img\\icons");
+        File pasta = new File ("\\src\\img\\icons");
         String [] arquivos = pasta.list();
         icones = new Icon [arquivos.length];
         
@@ -158,10 +158,10 @@ public class Batalha extends javax.swing.JFrame {
     }
     
     public void carregarCenario(){
-        File pasta = new File("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\img\\plataformas");
+        File pasta = new File("\\src\\img\\plataformas");
         String [] plataformas = pasta.list();
         Random aleatorio = new Random();
-        File pasta2 = new File("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\img\\background");
+        File pasta2 = new File("\\src\\img\\background");
         String [] backgrounds = pasta2.list();
         
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/background/" + backgrounds[aleatorio.nextInt(backgrounds.length)])));
@@ -198,7 +198,7 @@ public class Batalha extends javax.swing.JFrame {
     }
     
     public void capturarPokemon(){
-        File arquivo = new File ("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\data\\pokebag.txt");
+        File arquivo = new File ("\\src\\data\\pokebag.txt");
         FileWriter FW;
         
         try {
@@ -212,7 +212,7 @@ public class Batalha extends javax.swing.JFrame {
     }
     
     public void carregarBag(){
-        File arquivo = new File ("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\data\\bag.txt");
+        File arquivo = new File ("\\src\\data\\bag.txt");
         FileReader FR;
         BufferedReader BR;
         
@@ -233,7 +233,7 @@ public class Batalha extends javax.swing.JFrame {
     }
     
     public void salvarBag(){
-        File arquivo = new File ("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\data\\bag.txt");
+        File arquivo = new File ("\\src\\data\\bag.txt");
         FileWriter FW;
         
         try {

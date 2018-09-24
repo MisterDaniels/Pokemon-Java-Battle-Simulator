@@ -1,4 +1,4 @@
-
+﻿
 package view;
 
 import java.io.BufferedReader;
@@ -18,7 +18,7 @@ public class Bag extends javax.swing.JFrame {
     }
     
     public void carregarItems(){
-        File arquivo = new File("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\data\\items.txt");
+        File arquivo = new File("\\src\\data\\items.txt");
         FileReader FR;
         BufferedReader BR;
         int cont = 0;
@@ -41,7 +41,7 @@ public class Bag extends javax.swing.JFrame {
     }
     
     public int getQntItems(){
-        File arquivo = new File("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\data\\items.txt");
+        File arquivo = new File("\\src\\data\\items.txt");
         FileReader FR;
         BufferedReader BR;
         int quantidade = 0;
@@ -62,7 +62,7 @@ public class Bag extends javax.swing.JFrame {
     }
     
     public void carregarIcones(){
-        File pasta = new File ("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\img\\items");
+        File pasta = new File ("\\src\\img\\items");
         String [] arquivos = pasta.list();
         icones = new Icon [arquivos.length];
         

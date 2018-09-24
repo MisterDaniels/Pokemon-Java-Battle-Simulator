@@ -1,4 +1,4 @@
-
+﻿
 package view;
 
 import control.RenderLista;
@@ -29,7 +29,7 @@ public class Escolher extends javax.swing.JFrame {
     
     public void carregarPokemons_user(){
         TelaB = new Batalha(null);
-        File arquivo = new File ("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\data\\pokebag.txt");
+        File arquivo = new File ("\\src\\data\\pokebag.txt");
         FileReader FR;
         BufferedReader BR;
         pokemons = TelaB.pokemons;
@@ -55,7 +55,7 @@ public class Escolher extends javax.swing.JFrame {
     }
     
     public int getQntPokemons_user(){
-        File arquivo = new File("C:\\Users\\chica\\OneDrive\\Feira de Ciências\\Documentos\\NetBeansProjects\\BattleSimulator\\src\\data\\pokebag.txt");
+        File arquivo = new File("\\src\\data\\pokebag.txt");
         FileReader FR;
         BufferedReader BR;
         int quantidade = 0;
